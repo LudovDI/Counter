@@ -29,9 +29,13 @@ const defaultFun = () => {
 const checkValues = () => {
   if (age.value !== '' && height.value !== '' && weight.value !== '') {
     calculate.disabled = false;
+  } else {
+    calculate.disabled = true;
   }
   if (age.value !== '' || height.value !== '' || weight.value !== '') {
     reset.disabled = false;
+  } else {
+    reset.disabled = true;
   }
 };
 
