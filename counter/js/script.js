@@ -41,9 +41,9 @@ const checkValues = () => {
 
 defaultFun();
 
-age.addEventListener('change', checkValues);
-height.addEventListener('change', checkValues);
-weight.addEventListener('change', checkValues);
+age.addEventListener('input', checkValues);
+height.addEventListener('input', checkValues);
+weight.addEventListener('input', checkValues);
 reset.addEventListener('click', defaultFun);
 
 form.addEventListener('submit', (evt) => {
